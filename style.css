@@ -1,6 +1,11 @@
+@font-face {
+  font-family: "Golos";
+  src: url(./fonts/Golos\ Text_Bold.eot) url(./fonts/Golos\ Text_Bold.ttf) url(./fonts/Golos\ Text_Bold.woff) url(./fonts/Golos\ Text_Bold.woff2);
+}
 body {
   max-width: 1410px;
   margin: 0 auto;
+  font-family: "Golos";
 }
 
 /* Grid section*/
