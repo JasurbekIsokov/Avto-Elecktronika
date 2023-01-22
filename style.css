@@ -1,3 +1,37 @@
+body {
+  max-width: 1410px;
+}
 
+/* Grid section*/
+.grid {
+  margin: 60px auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 30px;
+  box-sizing: border-box;
+}
+.grid__card {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding: 36px;
+  gap: 22px;
+  border: 1px solid #6e7191;
+  border-radius: 20px;
+}
+.grid__card--right h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 32px;
+  color: #f56e1e;
+}
+.grid__card--right p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #6e7191;
+}
 
 /*# sourceMappingURL=style.css.map */

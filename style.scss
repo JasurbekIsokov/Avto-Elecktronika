@@ -3,4 +3,42 @@ $grey-color: #6e7191;
 $telegram-color: #c2c4d2;
 $opacity-color: #a0a3bc;
 
-/**/
+body {
+  max-width: 1410px;
+}
+/* Grid section*/
+
+.grid {
+  margin: 60px auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 30px;
+  box-sizing: border-box;
+  // margin: 0 auto;
+
+  &__card {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 36px;
+    gap: 22px;
+    border: 1px solid $grey-color;
+    border-radius: 20px;
+    &--right {
+      h1 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 32px;
+        color: $main-color;
+      }
+      p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: $grey-color;
+      }
+    }
+  }
+}
