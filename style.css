@@ -1,5 +1,6 @@
 body {
   max-width: 1410px;
+  margin: 0 auto;
 }
 
 /* Grid section*/
@@ -56,5 +57,32 @@ body {
 }
 
 /*/ Text section */
+/* Form section */
+.form {
+  background-color: #fde9de;
+  border-radius: 20px;
+}
+.form__firstline h3 {
+  line-height: 24px;
+  color: #6e7191;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  padding-top: 25px;
+  padding-left: 32px;
+}
+.form__secondline {
+  display: flex;
+}
+.form__secondline--left {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.form__secondline--left-ict {
+  display: flex;
+  align-items: center;
+}
+
+/*/ Form section */
 
 /*# sourceMappingURL=style.css.map */

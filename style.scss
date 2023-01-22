@@ -3,9 +3,11 @@ $grey-color: #6e7191;
 $dark-grey: #00000033;
 $telegram-color: #c2c4d2;
 $opacity-color: #a0a3bc;
+$form-background: #fde9de;
 
 body {
   max-width: 1410px;
+  margin: 0 auto;
 }
 
 /* Grid section*/
@@ -27,16 +29,22 @@ body {
     border-radius: 20px;
     &--right {
       h1 {
-        font-style: normal;
-        font-weight: 700;
-        font-size: 28px;
+        font: {
+          style: normal;
+          weight: 700;
+          size: 28px;
+        }
+
         line-height: 32px;
         color: $main-color;
       }
       p {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
+        font: {
+          style: normal;
+          weight: 400;
+          size: 16px;
+        }
+
         line-height: 20px;
         color: $grey-color;
       }
@@ -79,3 +87,40 @@ body {
 }
 
 /*/ Text section */
+
+/* Form section */
+.form {
+  background-color: $form-background;
+  border-radius: 20px;
+
+  &__firstline {
+    h3 {
+      line-height: 24px;
+      color: $grey-color;
+      font: {
+        style: normal;
+        weight: 600;
+        size: 22px;
+      }
+      padding: {
+        top: 25px;
+        left: 32px;
+      }
+    }
+  }
+
+  &__secondline {
+    // display: grid;
+    // grid-template-columns: auto auto;
+    display: flex;
+    &--left {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      &-ict {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}
+/*/ Form section */
