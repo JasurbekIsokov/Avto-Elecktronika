@@ -74,6 +74,10 @@ body {
       );
       color: $grey-color;
     }
+    span {
+      opacity: 0.6;
+      display: block;
+    }
   }
 
   &__icon {
@@ -110,16 +114,109 @@ body {
   }
 
   &__secondline {
-    // display: grid;
-    // grid-template-columns: auto auto;
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-left: 32px;
+    align-items: center;
     &--left {
-      display: grid;
-      grid-template-columns: auto auto auto;
-      &-ict {
-        display: flex;
-        align-items: center;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      padding: 0px;
+      gap: 30px;
+      margin-right: 48px;
+    }
+    .ict {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 0px;
+      gap: 8px;
+    }
+    .ict2 {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 0px;
+      gap: 8px;
+      p {
+        color: $grey-color;
       }
+    }
+    p {
+      font: {
+        style: normal;
+        weight: 400;
+        size: 14px;
+      }
+      line-height: 18px;
+      color: $main-color;
+      margin: 0 auto;
+    }
+
+    &--right {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      padding: 0px;
+      gap: 16px;
+      align-items: center;
+    }
+    input {
+      box-sizing: border-box;
+      padding: 6px 12px;
+      background: #ffffff;
+      border: 1px solid #a0a3bc;
+      border-radius: 12px;
+      width: 478px;
+      font-size: 16px;
+      width: 478px;
+      height: 48px;
+    }
+    input::placeholder {
+      font: {
+        style: normal;
+        weight: 400;
+        size: 16px;
+      }
+      line-height: 16px;
+      color: $opacity-color;
+      margin: 6px 12px;
+    }
+    button {
+      border-radius: 12px;
+      background-color: $main-color;
+      border: 1px solid $main-color;
+      color: #ffffff;
+      font: {
+        style: normal;
+        weight: 600;
+        size: 16px;
+      }
+      line-height: 28px;
+      padding: 8px 34.5px;
+      margin-right: 38px;
+    }
+  }
+
+  .form__thirdline {
+    margin: {
+      top: 28px;
+      left: 32px;
+    }
+    padding-bottom: 21px;
+    p {
+      font: {
+        style: normal;
+        weight: 400;
+        size: 12px;
+      }
+      line-height: 14px;
+      color: $grey-color;
+    }
+    span {
+      color: $main-color;
+      text-decoration: underline;
     }
   }
 }
