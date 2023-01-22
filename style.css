@@ -172,13 +172,140 @@ body {
 
 /*/ Form section */
 /* Footer */
-footer {
+.footer {
   background-color: #f1f1f1;
   width: 100%;
   margin-top: 34px;
-  margin-left: 0;
-  margin-bottom: 0;
-  margin-right: 0;
+  display: flex;
+  padding-left: 100px;
+  gap: 60px;
+  padding-bottom: 110px;
+}
+.footer__fr, .footer__sd, .footer__td, .footer__ft, .footer__fh {
+  padding-top: 46px;
+}
+.footer__fr p {
+  width: 240px;
+  color: #6e7191;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+}
+.footer__fr span {
+  text-decoration: underline;
+  display: block;
+}
+.footer__fr--p {
+  margin-top: 52px;
+}
+.footer__sd h4 {
+  color: #6e7191;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+}
+.footer__sd p {
+  color: #6e7191;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+.footer__td h4 {
+  color: #6e7191;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+}
+.footer__td p {
+  color: #6e7191;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+.footer__ft h4 {
+  color: #6e7191;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+}
+.footer__fh--1 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 15px;
+  align-items: center;
+}
+.footer__fh--1 h6 {
+  color: #6e7191;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-decoration-line: underline;
+  width: 249px;
+  height: 31px;
+}
+.footer__fh--1 img {
+  width: 28px;
+  height: 28px;
+}
+.footer__fh hr {
+  padding-top: 0;
+  width: 330px;
+  border: 1px solid #6e7191;
+}
+.footer__fh--2 p {
+  color: #a0a3bc;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  margin-left: 180px;
+}
+.footer__fh--2 span {
+  color: #6e7191;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  display: block;
+}
+.footer__fh--3 p {
+  color: #a0a3bc;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  margin-left: 180px;
+}
+.footer__fh--3 span {
+  color: #6e7191;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  display: block;
+}
+.footer__fh--4 p {
+  color: #a0a3bc;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  margin-left: 180px;
+}
+.footer__fh--4 span {
+  color: #6e7191;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  display: block;
 }
 
 /*/ Footer */

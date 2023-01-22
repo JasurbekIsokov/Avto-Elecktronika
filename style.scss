@@ -223,14 +223,196 @@ body {
 /*/ Form section */
 
 /* Footer */
-footer {
+.footer {
   background-color: #f1f1f1;
   width: 100%;
-  margin: {
-    top: 34px;
-    left: 0;
-    bottom: 0;
-    right: 0;
+  margin-top: 34px;
+  display: flex;
+  padding-left: 100px;
+  gap: 60px;
+  padding-bottom: 110px;
+  &__fr,
+  &__sd,
+  &__td,
+  &__ft,
+  &__fh {
+    padding-top: 46px;
+  }
+
+  &__fr {
+    p {
+      width: 240px;
+      color: $grey-color;
+      font: {
+        style: normal;
+        weight: 400;
+        size: 14px;
+      }
+      line-height: 14px;
+    }
+    span {
+      text-decoration: underline;
+      display: block;
+    }
+    &--p {
+      margin-top: 52px;
+    }
+  }
+
+  &__sd {
+    h4 {
+      color: $grey-color;
+      font: {
+        style: normal;
+        weight: 600;
+        size: 16px;
+      }
+      line-height: 18px;
+    }
+
+    p {
+      color: $grey-color;
+      font: {
+        style: normal;
+        weight: 400;
+        size: 14px;
+      }
+      line-height: 16px;
+    }
+  }
+
+  &__td {
+    h4 {
+      color: $grey-color;
+      font: {
+        style: normal;
+        weight: 600;
+        size: 16px;
+      }
+      line-height: 18px;
+    }
+
+    p {
+      color: $grey-color;
+      font: {
+        style: normal;
+        weight: 400;
+        size: 14px;
+      }
+      line-height: 16px;
+    }
+  }
+
+  &__ft {
+    h4 {
+      color: $grey-color;
+      font: {
+        style: normal;
+        weight: 600;
+        size: 16px;
+      }
+      line-height: 18px;
+    }
+  }
+
+  &__fh {
+    &--1 {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      gap: 15px;
+      align-items: center;
+      h6 {
+        color: $grey-color;
+        font: {
+          style: normal;
+          weight: 400;
+          size: 12px;
+        }
+        line-height: 14px;
+        text-decoration-line: underline;
+        width: 249px;
+        height: 31px;
+      }
+      img {
+        width: 28px;
+        height: 28px;
+      }
+    }
+
+    hr {
+      padding-top: 0;
+      width: 330px;
+      border: 1px solid $grey-color;
+    }
+
+    &--2 {
+      p {
+        color: $opacity-color;
+        font: {
+          style: normal;
+          weight: 400;
+          size: 12px;
+        }
+        line-height: 14px;
+        margin-left: 180px;
+      }
+      span {
+        color: $grey-color;
+        font: {
+          style: normal;
+          weight: 600;
+          size: 16px;
+        }
+        line-height: 18px;
+        display: block;
+      }
+    }
+
+    &--3 {
+      p {
+        color: $opacity-color;
+        font: {
+          style: normal;
+          weight: 400;
+          size: 12px;
+        }
+        line-height: 14px;
+        margin-left: 180px;
+      }
+      span {
+        color: $grey-color;
+        font: {
+          style: normal;
+          weight: 600;
+          size: 16px;
+        }
+        line-height: 18px;
+        display: block;
+      }
+    }
+
+    &--4 {
+      p {
+        color: $opacity-color;
+        font: {
+          style: normal;
+          weight: 400;
+          size: 12px;
+        }
+        line-height: 14px;
+        margin-left: 180px;
+      }
+      span {
+        color: $grey-color;
+        font: {
+          style: normal;
+          weight: 600;
+          size: 16px;
+        }
+        line-height: 18px;
+        display: block;
+      }
+    }
   }
 }
 /*/ Footer */
