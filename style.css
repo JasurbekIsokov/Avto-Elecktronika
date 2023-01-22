@@ -171,5 +171,16 @@ body {
 }
 
 /*/ Form section */
+/* Footer */
+footer {
+  background-color: #f1f1f1;
+  width: 100%;
+  margin-top: 34px;
+  margin-left: 0;
+  margin-bottom: 0;
+  margin-right: 0;
+}
+
+/*/ Footer */
 
 /*# sourceMappingURL=style.css.map */
