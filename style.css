@@ -34,4 +34,27 @@ body {
   color: #6e7191;
 }
 
+/*/ Grid section*/
+/* Text section */
+.text__main h2 {
+  color: #6e7191;
+  line-height: 36px;
+  font-weight: 700;
+  font-size: 32px;
+}
+.text__main p {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 68.51%);
+  color: #6e7191;
+}
+.text__icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 12px;
+  gap: 4px;
+}
+
+/*/ Text section */
+
 /*# sourceMappingURL=style.css.map */

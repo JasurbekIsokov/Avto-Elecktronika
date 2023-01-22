@@ -1,13 +1,14 @@
 $main-color: #f56e1e;
 $grey-color: #6e7191;
+$dark-grey: #00000033;
 $telegram-color: #c2c4d2;
 $opacity-color: #a0a3bc;
 
 body {
   max-width: 1410px;
 }
-/* Grid section*/
 
+/* Grid section*/
 .grid {
   margin: 60px auto;
   display: grid;
@@ -42,3 +43,39 @@ body {
     }
   }
 }
+
+/*/ Grid section*/
+
+/* Text section */
+.text {
+  &__main {
+    h2 {
+      color: $grey-color;
+      line-height: 36px;
+      font: {
+        weight: 700;
+        size: 32px;
+      }
+    }
+
+    p {
+      background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 0%,
+        #ffffff 68.51%
+      );
+      color: $grey-color;
+    }
+  }
+
+  &__icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 12px;
+    gap: 4px;
+  }
+}
+
+/*/ Text section */
