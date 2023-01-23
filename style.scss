@@ -1,1 +1,111 @@
+@font-face {
+  font-family: GOLOS;
+  src: url(Web/Golos\ Text_Medium/);
+}
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1410px;
+  margin: 0 auto;
+}
+
+.product {
+  &__IMG {
+    width: 100%;
+    height: 200px;
+    margin: 60px 0;
+  }
+
+  .cars {
+    h2 {
+      color: #4e4b66;
+      font-size: 25px;
+      font-family: GOLOS;
+      margin: 25px 30px;
+    }
+    .cars__images {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      gap: 10px;
+
+      img {
+        width: 180px;
+        height: 190px;
+        border-radius: 20px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  .sale {
+    margin-left: 30px;
+    font-family: GOLOS;
+    margin-bottom: 50px;
+    h2 {
+      color: #4e4b66;
+      font-size: 25px;
+      font-family: GOLOS;
+      margin: 25px 30px;
+    }
+
+    &__cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      gap: 50px;
+
+      &--card {
+        img {
+          width: 100%;
+          height: 210px;
+        }
+
+        h3 {
+          color: #14142b;
+          font-family: GOLOS;
+          font-size: 20px;
+
+          sup {
+            color: grey;
+          }
+        }
+
+        p {
+          color: grey;
+          font-size: 16px;
+          margin: 5px 0;
+
+          span {
+            color: #4e4b66;
+            font-weight: 600;
+          }
+        }
+
+        button {
+          background-color: #f56e1e;
+          border-radius: 12px;
+          border: none;
+          color: white;
+          text-align: center;
+          width: 180px;
+          height: 35px;
+          font-size: 18px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-top: 10px;
+
+          img {
+            width: 25px;
+            height: 25px;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}
