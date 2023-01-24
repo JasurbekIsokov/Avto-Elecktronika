@@ -1,1 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  max-width: 1420px;
+  position: relative;
+}
+
+.main {
+  background-image: url(./Images/products/Banner.png);
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  margin: 55px 25px 24px 40px;
+  position: relative;
+}
+
+.pointe {
+  display: flex;
+  justify-content: space-between;
+
+  &__icon {
+    margin: 90px 0 0 15px;
+  }
+
+  &__second {
+    margin: 90px 15px 0 0;
+  }
+}
+
+.point {
+  display: flex;
+  gap: 5px;
+
+  &__img {
+    margin-left: 580px;
+    width: 15px;
+    height: 8px;
+  }
+
+  &__middle {
+    width: 55px;
+    height: 45px;
+    margin-left: 560px;
+  }
+}
+
+.about {
+  &__letter {
+    margin-top: 25px;
+    margin-left: 59px;
+  }
+}
+
+.kategoriya {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box {
+  width: 310px;
+  height: 280px;
+  background-color: #f1f1f1;
+}
+
+.product {
+  display: flex;
+  justify-content: center;
+  gap: 95px;
+  margin-top: 65px;
+}
+
+.cam {
+  width: 290px;
+}
+
+.cam img {
+  width: 280px;
+  height: 160px;
+}
+
+.picture {
+  width: 150px;
+  height: 80px;
+}
+
+.letter {
+  display: flex;
+  gap: 95px;
+}
+
+.letter__word img {
+  width: 250px;
+  height: 30px;
+  margin-left: 145px;
+  margin-top: 15px;
+}
+
+.letter__word-2 img {
+  width: 270px;
+  height: 95px;
+  margin-left: 49px;
+  margin-top: 15px;
+}
+
+.letter__word-3 img {
+  width: 260px;
+  height: 30px;
+  margin-left: 17px;
+  margin-top: 15px;
+}
