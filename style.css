@@ -584,5 +584,156 @@ body {
   }
   /*/ Footer */
 }
+@media only screen and (max-width: 576px) {
+  .grid {
+    margin: 60px 20px;
+    display: block;
+  }
+  .grid__card {
+    display: block;
+    text-align: center;
+    padding: 36px;
+    margin-bottom: 30px;
+  }
+  .grid__card img {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 16px;
+  }
+  .grid__card h1 {
+    font-size: 28px;
+    line-height: 32px;
+    margin: 0;
+    margin-bottom: 16px;
+  }
+  .grid__card p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  /*/ Grid section*/
+  /* Text section */
+  .text {
+    margin-bottom: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .text__main h2 {
+    line-height: 22px;
+    font-size: 18px;
+  }
+  .text__main p {
+    font-size: 14px;
+  }
+  /*/ Text section */
+  /* Form section */
+  .form {
+    display: block;
+    margin: 0 auto;
+  }
+  .form__firstline h3 {
+    line-height: 22px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0;
+    padding-top: 15px;
+  }
+  .form__secondline {
+    display: block;
+    width: 400px;
+  }
+  .form__secondline--left {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 4px;
+    margin: 0;
+  }
+  .form__secondline .ict {
+    display: block;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+  .form__secondline .ict2 {
+    display: block;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+  .form__secondline .ict2 p {
+    font-size: 12px;
+    width: 100px;
+    margin: 0;
+    text-align: center;
+  }
+  .form__secondline p {
+    font-size: 12px;
+    width: 90px;
+    margin: 0;
+    text-align: center;
+  }
+  .form__secondline--right {
+    display: block;
+  }
+  .form__secondline input {
+    margin: 15px 30px;
+    width: 300px;
+  }
+  .form__secondline input::placeholder {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .form__secondline button {
+    margin: 15px 90px;
+    font-size: 16px;
+    line-height: 28px;
+    padding: 8px 35px;
+  }
+  .form .form__thirdline {
+    margin: 15px 20px;
+    text-align: center;
+  }
+  .form .form__thirdline p {
+    font-size: 15px;
+  }
+  /*/ Form section */
+  .footer__fr {
+    text-align: center;
+    padding: 0;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+  .footer__fr p {
+    width: 240px;
+    color: #6e7191;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .footer__fr span {
+    text-decoration: underline;
+    display: block;
+  }
+  .footer__fr--p {
+    margin-top: 52px;
+  }
+  .footer__sd {
+    display: none;
+  }
+  .footer__td {
+    display: none;
+  }
+  .footer__ft {
+    display: none;
+  }
+  .footer__fh {
+    display: none;
+  }
+  /*/ Footer */
+}
 
 /*# sourceMappingURL=style.css.map */
