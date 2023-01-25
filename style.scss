@@ -17,18 +17,34 @@ body {
   background-position: center;
   height: 250px;
   margin: 55px 25px 24px 40px;
+  position: relative;
 }
 
 .pointe {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  width: 99%;
+  padding-top: 110px;
 
-  &__icon {
-    margin: 90px 0 0 15px;
+  &__icon--right {
+    width: 100%;
+    padding: 0 18px;
+    display: flex;
+    justify-content: space-between;
   }
 
-  &__second {
-    margin: 90px 15px 0 0;
+  &__icon--right img {
+    background: #6E7191;
+    opacity: 0.45;
+    border: 2px solid #FFFFFF;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.4);
+    padding: 11px 15px 11px 12px;
+    border-radius: 50%;
+  }
+
+  &__icon--right img:last-child {
+    padding: 11px 12px 11px 15px;
+
   }
 }
 
@@ -56,28 +72,6 @@ body {
   }
 }
 
-//KATEGORIYA SECTION
-.aboutproduct {
-  //display: flex;
-  // justify-content: space-between;
-  margin: 120px 120px;
-  position: relative;
-
-  &__kategoriya {
-    padding: 35px;
-    width: 155px;
-    height: 130px;
-    background-color: #f1f1f1;
-    border-radius: 5px;
-  }
-
-  &__infor {
-    width: 114px;
-    height: 45px;
-  }
-}
-
-//KATEGORIYA SECTION
 .product {
   display: flex;
   justify-content: center;
@@ -87,16 +81,46 @@ body {
 
 .cam {
   width: 290px;
+  position: relative;
 }
 
 .cam img {
-  width: 280px;
-  height: 160px;
+  width: 305px;
+  height: 200px;
+}
+
+.label img {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 82px;
+  height: 32px;
+}
+
+.left {
+  position: absolute;
+  top: 85px;
+}
+
+.left img {
+  width: 10px;
+  height: 15px;
 }
 
 .picture {
   width: 150px;
   height: 80px;
+}
+
+.right {
+  position: absolute;
+  top: 85px;
+  right: 17px;
+}
+
+.right img {
+  width: 10px;
+  height: 15px;
 }
 
 .letter {
@@ -105,8 +129,8 @@ body {
 }
 
 .letter__word img {
-  width: 250px;
-  height: 30px;
+  width: 280px;
+  height: 75px;
   margin-left: 145px;
   margin-top: 15px;
 }
@@ -114,13 +138,42 @@ body {
 .letter__word-2 img {
   width: 270px;
   height: 95px;
-  margin-left: 49px;
+  margin-left: 10px;
   margin-top: 15px;
 }
 
 .letter__word-3 img {
-  width: 260px;
-  height: 30px;
-  margin-left: 17px;
+  width: 280px;
+  height: 75px;
+  margin-left: 25px;
   margin-top: 15px;
 }
+
+.date {
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+
+  &__img {
+    margin-left: 145px;
+  }
+
+  &__png {
+    margin-left: 350px;
+  }
+
+  &__btn {
+    position: absolute;
+    right: 150px;
+  }
+}
+
+.poiint {
+  margin-left: 600px;
+  margin-top: 50px;
+}
+
+//--------------RESPONSIVE SECTION--------------------------------------//
+@media only screen and (max-width:1200px) {}
+
+//--------------RESPONSIVE SECTION--------------------------------------//
