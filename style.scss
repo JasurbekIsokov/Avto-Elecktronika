@@ -17,7 +17,6 @@ body {
   background-position: center;
   height: 250px;
   margin: 55px 25px 24px 40px;
-  position: relative;
 }
 
 .pointe {
@@ -57,17 +56,28 @@ body {
   }
 }
 
-.kategoriya {
-  display: flex;
-  justify-content: space-between;
+//KATEGORIYA SECTION
+.aboutproduct {
+  //display: flex;
+  // justify-content: space-between;
+  margin: 120px 120px;
+  position: relative;
+
+  &__kategoriya {
+    padding: 35px;
+    width: 155px;
+    height: 130px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+  }
+
+  &__infor {
+    width: 114px;
+    height: 45px;
+  }
 }
 
-.box {
-  width: 310px;
-  height: 280px;
-  background-color: #f1f1f1;
-}
-
+//KATEGORIYA SECTION
 .product {
   display: flex;
   justify-content: center;

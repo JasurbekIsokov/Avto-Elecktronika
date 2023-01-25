@@ -17,7 +17,6 @@ body {
   background-position: center;
   height: 250px;
   margin: 55px 25px 24px 40px;
-  position: relative;
 }
 
 .pointe {
@@ -51,15 +50,20 @@ body {
   margin-left: 59px;
 }
 
-.kategoriya {
-  display: flex;
-  justify-content: space-between;
+.aboutproduct {
+  margin: 120px 120px;
+  position: relative;
 }
-
-.box {
-  width: 310px;
-  height: 280px;
+.aboutproduct__kategoriya {
+  padding: 35px;
+  width: 155px;
+  height: 130px;
   background-color: #f1f1f1;
+  border-radius: 5px;
+}
+.aboutproduct__infor {
+  width: 114px;
+  height: 45px;
 }
 
 .product {
