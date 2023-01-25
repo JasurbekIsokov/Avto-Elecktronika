@@ -6,14 +6,19 @@ $opacity-color: #a0a3bc;
 $form-background: #fde9de;
 
 @font-face {
-  font-family: "Golos";
+  font-family: Golos;
   src: url(./fonts/Golos\ Text_Bold.eot) url(./fonts/Golos\ Text_Bold.ttf)
     url(./fonts/Golos\ Text_Bold.woff) url(./fonts/Golos\ Text_Bold.woff2);
 }
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   max-width: 1410px;
   margin: 0 auto;
-  font-family: "Golos";
+  font-family: Golos;
 }
 
 /* Grid section*/
@@ -26,34 +31,39 @@ body {
   // margin: 0 auto;
 
   &__card {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto;
     align-items: center;
     flex-direction: row;
-    padding: 36px;
+    padding: 21px;
     gap: 22px;
     border: 1px solid $grey-color;
     border-radius: 20px;
-    &--right {
-      h1 {
-        font: {
-          style: normal;
-          weight: 700;
-          size: 28px;
-        }
 
-        line-height: 32px;
-        color: $main-color;
-      }
-      p {
-        font: {
-          style: normal;
-          weight: 400;
-          size: 16px;
-        }
+    img {
+      grid-column: 1 / 1;
+      grid-row: 1 / span 2;
+    }
 
-        line-height: 20px;
-        color: $grey-color;
+    h1 {
+      font: {
+        style: normal;
+        weight: 700;
+        size: 28px;
       }
+      line-height: 32px;
+      color: $main-color;
+      margin: 0;
+    }
+    p {
+      font: {
+        style: normal;
+        weight: 400;
+        size: 16px;
+      }
+      line-height: 20px;
+      color: $grey-color;
+      margin: 0;
     }
   }
 }
@@ -62,6 +72,7 @@ body {
 
 /* Text section */
 .text {
+  margin-bottom: 60px;
   &__main {
     h2 {
       color: $grey-color;
@@ -228,14 +239,28 @@ body {
 }
 /*/ Form section */
 
+/* Upward icon */
+.upward {
+  margin: {
+    top: 34px;
+    right: 20px;
+  }
+  text-align: right;
+  // position: fixed;
+}
+/*/ Upward icon */
+
 /* Footer */
+
 .footer {
   background-color: #f1f1f1;
+  border-radius: 20px 20px 0 0;
   width: 100%;
+  margin: 0 auto;
   margin-top: 34px;
   display: flex;
-  padding-left: 100px;
-  gap: 60px;
+  padding-left: 20px;
+  gap: 65px;
   padding-bottom: 110px;
   &__fr,
   &__sd,
@@ -284,6 +309,11 @@ body {
         size: 14px;
       }
       line-height: 16px;
+      cursor: pointer;
+    }
+
+    p:hover {
+      color: $telegram-color;
     }
   }
 
@@ -306,6 +336,10 @@ body {
         size: 14px;
       }
       line-height: 16px;
+      cursor: pointer;
+    }
+    p:hover {
+      color: $telegram-color;
     }
   }
 
@@ -322,6 +356,7 @@ body {
   }
 
   &__fh {
+    text-align: right;
     &--1 {
       display: grid;
       grid-template-columns: auto auto auto;
@@ -360,7 +395,7 @@ body {
           size: 12px;
         }
         line-height: 14px;
-        margin-left: 180px;
+        margin-left: 170px;
       }
       span {
         color: $grey-color;
@@ -422,3 +457,13 @@ body {
   }
 }
 /*/ Footer */
+
+@media only screen and (max-width: 1200px) {
+  body {
+    margin: 0 auto;
+  }
+  .form {
+    background-color: $form-background;
+    border-radius: 20px;
+  }
+}
