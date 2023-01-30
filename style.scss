@@ -58,7 +58,7 @@ body {
     gap: 30px;
 
     &--card {
-      width: 240px;
+      width: 203px;
       height: 434px;
 
       img {
@@ -134,8 +134,8 @@ body {
       gap: 30px;
 
       img {
-        width: 225px;
-        height: 203px;
+        width: 285px;
+        height: 283px;
         border-radius: 20px;
         margin-bottom: 60px;
       }
@@ -144,25 +144,101 @@ body {
 
   .sale {
     margin-left: 50px;
+
+    h2 {
+      color: #4e4b66;
+      font-size: 35px;
+      font-family: GOLOS;
+      margin: 30.71px 0px;
+    }
+
     &__cards {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
       gap: 30px;
+
+      &--card {
+        width: 283px;
+        height: 434px;
+        margin-bottom: 200px;
+
+        img {
+          width: 280px;
+          height: 280px;
+        }
+
+        h3 {
+          color: #14142b;
+          font-family: GOLOS;
+          font-size: 28px;
+
+          sup {
+            color: grey;
+          }
+        }
+
+        p {
+          color: grey;
+          font-size: 22px;
+          margin: 5px 0;
+
+          span {
+            color: #4e4b66;
+            font-weight: 600;
+          }
+        }
+
+        button {
+          background-color: #f56e1e;
+          border-radius: 12px;
+          border: none;
+          color: white;
+          text-align: center;
+          width: 180px;
+          height: 35px;
+          font-size: 18px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-top: 10px;
+
+          img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+          }
+        }
+      }
     }
   }
 }
 
 @media only screen and (max-width: 576px) {
+  .product__IMG {
+    height: 250px;
+
+    img {
+      height: 200px;
+      width: 1000px;
+    }
+  }
   .cars {
-    margin-left: 50px;
+    margin-left: 200px;
+
+    h2 {
+      font-size: 45px;
+      width: 500px;
+      text-align: center;
+    }
     .cars__images {
       display: grid;
       grid-template-columns: auto auto;
       gap: 30px;
+      text-align: center;
 
       img {
-        width: 225px;
-        height: 203px;
+        width: 350px;
+        height: 350px;
         border-radius: 20px;
         margin-bottom: 60px;
       }
@@ -170,11 +246,69 @@ body {
   }
 
   .sale {
-    margin-left: 50px;
+    margin-left: 200px;
+
+    h2 {
+      font-size: 55px;
+      width: 400px;
+    }
     &__cards {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 30px;
+
+      &--card {
+        width: 340px;
+        height: 434px;
+        margin-bottom: 400px;
+
+        img {
+          width: 300px;
+          height: 300px;
+        }
+
+        h3 {
+          color: #14142b;
+          font-family: GOLOS;
+          font-size: 25px;
+
+          sup {
+            color: grey;
+          }
+        }
+
+        p {
+          color: grey;
+          font-size: 35px;
+          margin: 5px 0;
+
+          span {
+            color: #4e4b66;
+            font-weight: 600;
+          }
+        }
+
+        button {
+          background-color: #f56e1e;
+          border-radius: 12px;
+          border: none;
+          color: white;
+          text-align: center;
+          width: 280px;
+          height: 65px;
+          font-size: 28px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-top: 20px;
+
+          img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+          }
+        }
+      }
     }
   }
 }
