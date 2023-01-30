@@ -14,70 +14,71 @@ body {
 }
 
 .product__IMG,
-.product .img__last {
+.img__last {
   width: 100%;
   height: 200px;
   margin: 60px 0;
 }
-.product .cars h2 {
+
+.cars h2 {
   color: #4e4b66;
   font-size: 25px;
   font-family: GOLOS;
   margin: 30px 0px;
 }
-.product .cars .cars__images {
+.cars .cars__images {
   display: flex;
   justify-content: space-between;
   gap: 33px;
 }
-.product .cars .cars__images img {
+.cars .cars__images img {
   width: 172px;
   height: 203px;
   border-radius: 20px;
   margin-bottom: 60px;
 }
-.product .sale {
-  width: 1410px;
+
+.sale {
   font-family: GOLOS;
   margin-bottom: 50px;
 }
-.product .sale h2 {
+.sale h2 {
   color: #4e4b66;
   font-size: 25px;
   font-family: GOLOS;
   margin: 30.71px 0px;
 }
-.product .sale__cards {
+.sale__cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 30px;
-  width: 1410px;
 }
-.product .sale__cards--card {
+.sale__cards--card {
+  width: 240px;
   height: 434px;
 }
-.product .sale__cards--card img {
+.sale__cards--card img {
   width: 210px;
   height: 210px;
 }
-.product .sale__cards--card h3 {
+.sale__cards--card h3 {
   color: #14142b;
   font-family: GOLOS;
   font-size: 20px;
 }
-.product .sale__cards--card h3 sup {
+.sale__cards--card h3 sup {
   color: grey;
 }
-.product .sale__cards--card p {
+.sale__cards--card p {
   color: grey;
   font-size: 16px;
   margin: 5px 0;
 }
-.product .sale__cards--card p span {
+.sale__cards--card p span {
   color: #4e4b66;
   font-weight: 600;
 }
-.product .sale__cards--card button {
+.sale__cards--card button {
   background-color: #f56e1e;
   border-radius: 12px;
   border: none;
@@ -91,24 +92,25 @@ body {
   justify-content: center;
   margin-top: 10px;
 }
-.product .sale__cards--card button img {
+.sale__cards--card button img {
   width: 30px;
   height: 30px;
   margin-right: 10px;
 }
 
 @media only screen and (max-width: 1400px) {
-  .product {
-    padding: 0 50px;
-  }
   .cars__images {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     display: none;
   }
+  .cars__images img {
+    width: 220px;
+    height: 203px;
+  }
 }
 @media only screen and (max-width: 1200px) {
-  .product {
-    padding: 0 50px;
+  .cars {
+    margin-left: 50px;
   }
   .cars .cars__images {
     display: grid;
@@ -116,23 +118,42 @@ body {
     gap: 30px;
   }
   .cars .cars__images img {
-    width: 208px;
+    width: 225px;
     height: 203px;
     border-radius: 20px;
     margin-bottom: 60px;
   }
-  .cars__cards {
+  .sale {
+    margin-left: 50px;
+  }
+  .sale__cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 30px;
   }
-  .cars__cards--card {
-    width: 210px;
-    height: 434px;
+}
+@media only screen and (max-width: 576px) {
+  .cars {
+    margin-left: 50px;
   }
-  .cars__cards--card img {
-    width: 210px;
-    height: 210px;
+  .cars .cars__images {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 30px;
+  }
+  .cars .cars__images img {
+    width: 225px;
+    height: 203px;
+    border-radius: 20px;
+    margin-bottom: 60px;
+  }
+  .sale {
+    margin-left: 50px;
+  }
+  .sale__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
   }
 }
 
