@@ -353,6 +353,11 @@ body {
         img {
           width: 24px;
           height: 24px;
+        }
+      }
+    }
+  }
+}
 
 $main-color: #f56e1e;
 $grey-color: #6e7191;
@@ -1039,12 +1044,10 @@ body {
             size: 14px;
           }
           line-height: 16px;
-
         }
       }
     }
   }
-
 }
 
 /* / header */
@@ -1544,5 +1547,4 @@ body {
     }
   }
   /*/ Form section */
-
 }
