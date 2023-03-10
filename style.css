@@ -893,7 +893,8 @@ body {
 
 @font-face {
   font-family: Golos;
-  src: url(./fonts/GolosText_Bold.eot) url(./fonts/GolosText_Bold.ttf) url(./fonts/GolosText_Bold.woff) url(./fonts/GolosText_Bold.woff2);
+  src: url(./fonts/GolosText_Bold.eot) url(./fonts/GolosText_Bold.ttf)
+    url(./fonts/GolosText_Bold.woff) url(./fonts/GolosText_Bold.woff2);
 }
 * {
   box-sizing: border-box;
@@ -925,7 +926,7 @@ body {
 }
 .grid__card img {
   grid-column: 1/1;
-  grid-row: 1/span 2;
+  grid-row: 1 / span 2;
 }
 .grid__card h1 {
   font-style: normal;
@@ -956,7 +957,11 @@ body {
   font-size: 32px;
 }
 .text__main p {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 68.51%);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    #ffffff 68.51%
+  );
   color: #6e7191;
 }
 .text__main span {
@@ -1103,7 +1108,11 @@ body {
   gap: 65px;
   padding-bottom: 110px;
 }
-.footer__fr, .footer__sd, .footer__td, .footer__ft, .footer__fh {
+.footer__fr,
+.footer__sd,
+.footer__td,
+.footer__ft,
+.footer__fh {
   padding-top: 46px;
 }
 .footer__fr p {
@@ -1273,15 +1282,15 @@ body {
   }
   .grid__card h1 {
     grid-column: 2/2;
-    grid-row: 1/span 1;
+    grid-row: 1 / span 1;
     font-weight: 700;
     font-size: 22px;
     line-height: 24px;
     margin: 0;
   }
   .grid__card p {
-    grid-column: 1/span 2;
-    grid-row: 2/span 2;
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 2;
   }
   /*/ Grid section*/
   /* Text section */
@@ -1308,13 +1317,13 @@ body {
     margin: 0;
   }
   .form__firstline h3 {
-    grid-column: 1/span 1;
-    grid-row: 1/span 1;
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
   }
   .form__secondline {
     display: block;
-    grid-column: 2/span 1;
-    grid-row: 1/span 2;
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 2;
     width: 100%;
     box-sizing: border-box;
     margin-right: 10px;
@@ -1331,8 +1340,8 @@ body {
     padding: 8px 10px;
   }
   .form .form__thirdline {
-    grid-column: 1/span 1;
-    grid-row: 2/span 1;
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
     margin-left: 25px;
   }
   /*/ Form section */
@@ -1543,8 +1552,8 @@ body {
   }
   .form__secondline {
     display: block;
-    grid-column: 2/span 1;
-    grid-row: 1/span 2;
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 2;
     width: 400px;
     box-sizing: border-box;
     margin-left: 0;
@@ -1576,8 +1585,8 @@ body {
     padding: 8px 20px;
   }
   .form .form__thirdline {
-    grid-column: 1/span 1;
-    grid-row: 2/span 1;
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
     margin-left: 25px;
     margin: 0 0 0 25px;
   }
